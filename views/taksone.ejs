@@ -1,0 +1,25 @@
+<%- include('./header'); %>
+<div class="col-md-12">
+    <h3>Hasil Shorting</h3>
+<table class="table ">
+<thead>
+    <tr>
+        <td>Nama</td>
+        <td>Harga</td>
+        <td>Rating</td>
+        <td>Likes</td>
+    </tr>
+</thead>
+<tbody>
+    <% result.forEach(function(result) { %>
+        <tr>
+            <td><%= result.nama %></td>
+            <td><%= result.harga %></td>
+            <td><%= result.rating %></td>
+            <td><%= result.likes %></td>
+        </tr>
+    <% }); %>   
+</tbody>
+</table>
+</div>
+<%- include('./footer'); %>
